@@ -1,3 +1,36 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+.contents {
+  padding-bottom: 100px;
+}
+
+.site-header {
+ background-color: #4beadc;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    width: 100%;
+    font-size: x-large;
+}
+.left {
+  float: left;
+   font-size: x-large;
+}
+.menu li {
+    float: right;
+    margin-right: 15px;
+    font-size: x-large;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: skyblue;
+    text-align: center;
+    }
 body {
   background-color: #fff;
   color: #333;
@@ -81,4 +114,85 @@ div {
 
 label {
   display: block;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px 0px;
+  
+}
+
+.each_messages {
+
+height: 230px;
+margin: 15px 0px;
+padding: 20px;
+border: 2px solid #ccc;
+border-radius: 10px;  
+}
+
+.data {
+  font-size: 15px;
+  height: 100px;
+}
+
+.data li {
+  padding: 3px 0px;
+}
+
+.buttons li {
+  padding: 5px 5px 5px 0px;
+  float: left;
+
+}
+.buttons:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.data {
+  font-size: 20px;
+  height: 100px;
+  overflow: scroll;
+}
+a.btn_black {
+  color: #1D9AF2;
+background-color: #292D3E;
+border: 1px solid #1D9AF2;
+border-radius: 4px;
+padding: 0 15px;
+cursor: pointer;
+height:32px;
+font-size:14px;
+transition: all 0.2s ease-in-out;
+}
+a.btn_black:hover  {
+  border-radius: 50%;
+}
+a.btn_black:visited {
+  color: #fff;
+  background-color:  #000;
+}
+.btn_green {
+color: #fff;
+background-color: #2999af;
+}
+a.btn_green {
+  color: #fff
+}
+a.btn_index{
+  color: red;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  margin: 10px 0px;
+}
+h2 {
+  margin: 30px 0px;
 }
