@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  resources :messages
-  root  'messages#index'
+	resources :messages do
+		root  'messages#index'
+		collection do
+			post :confirm
+		end
+	end
 end
