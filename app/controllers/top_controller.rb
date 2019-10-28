@@ -1,2 +1,7 @@
-class TopController < ApplicationController
+class TopController < MessagesController
+
+	def index
+		
+	end
+	
 end
