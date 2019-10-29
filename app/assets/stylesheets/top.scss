@@ -1,3 +1,15 @@
-// Place all the styles related to the top controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
+.welcome h1 {
+margin-top: 100px;
+text-align: center;
+font-family: monospace; 
+width: 15ch;
+border-right: .08em solid;
+overflow: hidden;
+font-size: 4em;
+white-space: nowrap;
+animation: typing 5s steps(15, end), caret .5s step-end infinite;
+}
+
