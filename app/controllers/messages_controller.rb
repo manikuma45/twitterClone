@@ -10,7 +10,11 @@ class MessagesController < ApplicationController
 
  
   def new
+    if params[:back]
+      @message= Message.new(message_params)
+    else
     @message = Message.new
+  end
   end
 
   def edit
@@ -52,15 +56,15 @@ class MessagesController < ApplicationController
 
   def confirm
      @message = Message.new(message_params)
-  end
+    end
 
   private
 
-    def set_message
-      @message = Message.find(params[:id])
-    end
+  def set_message
+  @message = Message.find(params[:id])
+  end
 
-    def message_params
-      params.require(:message).permit(:content)
-    end
+  def message_params
+  params.require(:message).permit(:content)
+  end
 end
